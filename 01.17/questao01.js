@@ -8,11 +8,11 @@ function formatDate() {
   const ano = parseInt(dateParts[2]);
 
   const meses = [
-    'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
-    'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'
+    'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+    'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
   ];
 
-  const mesName = meses[mes-1];
+  const mesName = meses[mes - 1];
   const anoString = ano;
 
   return `${dia} de ${mesName} de ${anoString}`;
