@@ -1,22 +1,22 @@
 const prompt = require('prompt-sync')();
 
-// função literal
+/* função literal
 function func01() {
-    return 45+89;
+    return 45 + 89;
 }
 
 // armazenar uma função em um variavel
-const func02 = function() {
+const func02 = function () {
     return `Função 02`;
 }
 // um nomezinho pra ela por associação
 
 //armazenar uma função em uma Array
 
-const minhaArray = [function (a,b) {return a+b}, func01, func02];
-console.log(minhaArray[0] (8, 9));
-console.log(minhaArray[1] ());
-console.log(minhaArray[2] ());
+const minhaArray = [function (a, b) { return a + b }, func01, func02];
+console.log(minhaArray[0](8, 9));
+console.log(minhaArray[1]());
+console.log(minhaArray[2]());
 
 // armazenar uma função em atributo de objeto
 
@@ -47,13 +47,13 @@ run1(`AAAAAAAAAAAAA`);
 function calculaSalario(funcoes, valor) {
     funcoes(valor);
 }
-calculaSalario (function (valor) {
+calculaSalario(function (valor) {
     let impostos = valor * 0.03;
     let valorComImposto = valor + impostos;
     console.log(valorComImposto)
 }, 1200);
 
-calculaSalario (function (valor) {
+calculaSalario(function (valor) {
     let impostos = valor * 0.5;
     let valorComImposto = valor + impostos;
     return valorComImposto;
@@ -73,4 +73,9 @@ function calculadora() {
     }
 }
 
-console.log(calculadora()(5,7));
+console.log(calculadora()(5, 7)); */
+
+function somar(a, b) {
+    console.log(a + b);
+}
+module.exports = somar;
