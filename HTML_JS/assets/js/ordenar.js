@@ -1,0 +1,7 @@
+function adicionarValor() {
+    
+}
+
+function ordenarValor() {
+
+}
