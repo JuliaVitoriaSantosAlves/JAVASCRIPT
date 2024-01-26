@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/HTML_JS/assets/css/orcamento.css">
+    <script src="/HTML_JS/assets/js/orcamento.js"></script>
+    <title>
+        Orçamentos
+    </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark-bg-primary mb-5">
+        <div class="container">
+            <a href="#" class="navbar-brand logo">
+                <img src="/HTML_JS/assets/img/logo.png" alt="logo em forma de porquinho">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="orcamento.html" class="nav-link">
+                            Cadastro
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="orcamento_consulta.html" class="nav-link">
+                            Consulta
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col mb-5">
+                <h1 class="display-4">
+                    Registro de despesas
+                </h1>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-2">
+                <select class="form-control" id="anos">
+                    <option value="">
+                        Selecione um ano
+                    </option>
+                    <option value="2023">
+                        2023
+                    </option>
+                    <option value="2024">
+                        2024
+                    </option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <select class="form-control" id="meses">
+                    <option value="">
+                        Selecione um mes
+                    </option>
+                    <option value="jan">
+                        Janeiro
+                    </option>
+                    <option value="fev">
+                        Fevereiro
+                    </option>
+                    <option value="mar">
+                        Março
+                    </option>
+                    <option value="abr">
+                        Abril
+                    </option>
+                    <option value="mai">
+                        Maio
+                    </option>
+                    <option value="jun">
+                        Junho
+                    </option>
+                    <option value="jul">
+                        Julho
+                    </option>
+                    <option value="ago">
+                        Agosto
+                    </option>
+                    <option value="set">
+                        Setembro
+                    </option>
+                    <option value="out">
+                        Outubro
+                    </option>
+                    <option value="nov">
+                        Novembro
+                    </option>
+                    <option value="dez">
+                        Dezembro
+                    </option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control" placeholder="Informe o DIA" id="dia">
+            </div>
+            <div class="col-md-6">
+                <select class="form-control" id="tipo">
+                    <option value="">
+                        Selecione um tipo
+                    </option>
+                    <option value="alimentacao">
+                        Alimentação
+                    </option>
+                    <option value="educacao">
+                        Educação
+                    </option>
+                    <option value="lazer">
+                        Lazer
+                    </option>
+                    <option value="saude">
+                        Saúde
+                    </option>
+                    <option value="transporte">
+                        Transporte
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <input type="text" id="descricao" class="form-control" placeholder="Descreva">
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="valor" placeholder="Informe o valor">
+            </div>
+            <div class="col-md-2 d-flex justify-content-end">
+                <button type="button" class="btn btn-primary" onclick="">
+                    <i class="bi bi-plus-lg"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+
+    <div class="modal fade" id="modalRegistraDespesa" tabindex="-1" role="dialog" aria-labelledby="exemploModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div id="modal_titulo_div">
+                <h5 class="modal-title" id="modal_titulo"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">
+                        &times;
+                    </span>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-conteudo"></div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" id="modal_btn">
+                    Voltar
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
