@@ -1,0 +1,32 @@
+* {
+    color: gray;
+    transition: 0.5s;
+}
+
+*:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+.container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.input-group,
+.output-group {
+    margin: 1rem 0;
+}
+
+input,
+select {
+    border-radius: 5px;
+    width: 250px;
+    height: 33px;
+}
+
+button {
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+}
