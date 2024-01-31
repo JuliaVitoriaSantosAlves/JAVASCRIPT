@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Formulário
+    </title>
+</head>
+
+<body>
+    <h1>Formulário HTML</h1>
+    <form>
+        <label for="texto">Insira um texto:</label>
+        <input type="text" id="texto" name="texto" /><br /><br />
+        <label for="valor">Insira um valor:</label>
+        <input type="number" id="valor" name="valor" /><br /><br />
+        <button type="button" onclick="adicionar()">Adicionar</button>
+    </form>
+    <br />
+    <label for="busca">Pesquisar:</label>
+    <input type="text" id="busca" name="busca" onkeyup="pesquisar()" />
+    <br /><br />
+    <table id="tabela">
+        <tr>
+            <th>Texto</th>
+            <th>Valor</th>
+        </tr>
+    </table>
+    <script src="./js/formulario.js"></script>
+</body>
+
+</html>
