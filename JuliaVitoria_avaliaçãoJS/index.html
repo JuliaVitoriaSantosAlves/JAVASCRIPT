@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/js/script.js"></script>
+    <title>
+        Rosto & Corpo
+    </title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Agende sua consulta
+        </h1>
+    </header>
+    <main>
+        <section class="cadastrar">
+            <form>
+                <label for="nome">
+                    Nome:
+                </label>
+                <br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo aqui">
+                <br>
+                <label for="data">
+                    Data:
+                </label>
+                <br>
+                <input type="date" id="data" name="data">
+                <br>
+                <label for="hora">
+                    Hora:
+                </label>
+                <br>
+                <input type="time" id="hora" name="hora">
+                <br>
+                <button type="button" onclick="adicionarConsulta()">
+                    Agendar
+                </button>
+            </form>
+        </section>
+        <h2>
+            Consultas agendadas:
+        </h2>
+        <section class="cadastros">
+            <table id="consultas">
+                <thead>
+                    <tr>
+                        <th>
+                            Nome:
+                        </th>
+                        <th>
+                            Data:
+                        </th>
+                        <th>
+                            Horario:
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

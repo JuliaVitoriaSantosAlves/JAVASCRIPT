@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: chartreuse;
+    width: 98vw;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastrar {
+    width: 98vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    border: 2px solid chartreuse;
+    border-radius: 2em;
+    width: 98vw;
+    margin: 2em;
+    padding: 2em;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    width: 30vw;
+    height: 7vh;
+    border-radius: 0.5em;
+    margin: 0.8em 0;
+}
+
+button {
+    margin: 2em 0;
+    width: 10vw;
+    height: 7vh;
+    background-color: chartreuse;
+    border-radius: 0.5em;
+    border: 2px solid chartreuse;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+h2 {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.cadastros {
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#consultas {
+    margin: 2em 0;
+    border: 2px solid chartreuse;
+    border-radius: 0.5em;
+    width: 98vw;
+    height: 90vh;
+}
